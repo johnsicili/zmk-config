@@ -81,7 +81,7 @@
     raise_layer {
       bindings = <
         &trans &kp GRAVE &kp UNDERSCORE &kp UP &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp DOLLAR &kp KP_EQUAL &kp N7 &kp N8 &kp N9 &trans
-        $trans &kp AT_SIGN &kp LEFT &kp DOWN &kp RIGHT &kp AMPERSAND &kp PERCENT &kp PLUS &kp N4 &kp N5 &kp N6 &trans
+        &trans &kp AT_SIGN &kp LEFT &kp DOWN &kp RIGHT &kp AMPERSAND &kp PERCENT &kp PLUS &kp N4 &kp N5 &kp N6 &trans
         &trans &kp KP_MULTIPLY &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LESS_THAN &kp GREATER_THAN &kp HASH &kp N0 &kp N1 &kp N2 &kp N3 &trans
         &trans &trans &trans &trans &trans &trans
       >;
