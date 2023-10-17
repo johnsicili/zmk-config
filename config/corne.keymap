@@ -24,18 +24,20 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         // Change the shift character for the period key.
-//        period_exclamation: mod_morph_period_exclamation {
-//            compatible = "zmk,behavior-mod-morph";
-//            label = "PERIOD_EXCLAMATION";
-//            bindings = <&kp DOT>, <&kp EXCLAIM>;
-//            mods = <(MOD_LSFT|MOD_RSFT)>;
-//        };
+        period_exclamation: mod_morph_period_exclamation {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PERIOD_EXCLAMATION";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp EXCLAIM>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
         // Send a combo that equates to emoji menu on a key press.
-//        key42_macro: beacon {
-//            compatible = "zmk,behavior-beacon";
-//            label = "KEY42_MACRO";
-//            sequence = <(KC_LCTRL, KC_LGUI, KC_SPC)>;
-//        };
+        key42_macro: beacon {
+            compatible = "zmk,behavior-beacon";
+            label = "KEY42_MACRO";
+            #binding-cells = <0>;
+            sequence = <(KC_LCTRL, KC_LGUI, KC_SPC)>;
+        };
         backspace_del: backspace_del {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DEL";
@@ -63,7 +65,7 @@
 
     default_layer {
       bindings = <
-        &kp TAB  &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp BACKSPACE
+        &kp TAB  &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp backspace_del
         &kp LCTRL &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI &kp SQT
         &mt LSHFT CAPSLOCK &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
         &kp LALT &kp LCMD &mt RAISE ENTER &mt RAISE SPACE &mo LOWER &none
