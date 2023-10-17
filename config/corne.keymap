@@ -23,12 +23,12 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         // Change the shift character for the period key.
-        period_exclamation: mod_morph_period_exclamation {
-            compatible = "zmk,behavior-mod-morph";
-            label = "PERIOD_EXCLAMATION";
-            bindings = <&kp DOT>, <&kp EXCLAIM>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+//        period_exclamation: mod_morph_period_exclamation {
+//            compatible = "zmk,behavior-mod-morph";
+//            label = "PERIOD_EXCLAMATION";
+//            bindings = <&kp DOT>, <&kp EXCLAIM>;
+//            mods = <(MOD_LSFT|MOD_RSFT)>;
+//        };
         // Send a combo that equates to emoji menu on a key press.
 //        key42_macro: beacon {
 //            compatible = "zmk,behavior-beacon";
