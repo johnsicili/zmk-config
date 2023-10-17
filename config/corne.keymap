@@ -14,7 +14,19 @@
 #define RAISE 2
 
 / {
-    behaviors {
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <20 21>;
+            bindings = <&kp ESC>;
+        };
+    };
+};
+
+/ {
+
+  behaviors {
 //        // Change the shift character for the comma key.
 //        comma_dash: mod_morph_comma_dash {
 //            compatible = "zmk,behavior-mod-morph";
@@ -29,34 +41,21 @@
 //            bindings = <&kp DOT>, <&kp EXCLAIM>;  // Define the keybindings for period and exclamation mark
 //            mods = <(MOD_LSFT|MOD_RSFT)>;  // Specify that Shift (left shift) is the modifier
 //        };
-        // Send a combo that equates to emoji menu on a key press.
-        key42_macro: beacon {
-            compatible = "zmk,behavior-beacon";
-            label = "KEY42_MACRO";
-            sequence = <(KC_LCTRL, KC_LGUI, KC_SPC)>;
-        };
-        backspace_del: backspace_del {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BACKSPACE_DEL";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp DEL>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-    };
-};
+      // Send a combo that equates to emoji menu on a key press.
+      key42_macro: beacon {
+          compatible = "zmk,behavior-beacon";
+          label = "KEY42_MACRO";
+          sequence = <(KC_LCTRL, KC_LGUI, KC_SPC)>;
+      };
+      backspace_del: backspace_del {
+          compatible = "zmk,behavior-mod-morph";
+          label = "BACKSPACE_DEL";
+          #binding-cells = <0>;
+          bindings = <&kp BACKSPACE>, <&kp DEL>;
+          mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+  };
 
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <20 21>;
-            bindings = <&kp ESC>;
-        };
-    };
-};
-
-/ {
   keymap {
     compatible = "zmk,keymap";
 
