@@ -19,6 +19,7 @@
         comma_dash: mod_morph_comma_dash {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_DASH";
+            #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp MINUS>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
