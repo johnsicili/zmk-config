@@ -13,37 +13,37 @@
 #define LOWER 1
 #define RAISE 2
 
-/ {
-    behaviors {
-        // Change the shift character for the comma key.
-        comma_dash: mod_morph_comma_dash {
-            compatible = "zmk,behavior-mod-morph";
-            label = "COMMA_DASH";
-            bindings = <&kp COMMA>, <&kp MINUS>;  // Define the keybindings for comma and dash
-            mods = <(MOD_LSFT|MOD_RSFT)>;  // Specify that Shift (left shift) is the modifier
-        };
-        // Change the shift character for the period key.
-        period_exclamation: mod_morph_period_exclamation {
-            compatible = "zmk,behavior-mod-morph";
-            label = "PERIOD_EXCLAMATION";
-            bindings = <&kp DOT>, <&kp EXCLAIM>;  // Define the keybindings for period and exclamation mark
-            mods = <(MOD_LSFT|MOD_RSFT)>;  // Specify that Shift (left shift) is the modifier
-        };
-        // Send a combo that equates to emoji menu on a key press.
-        key42_macro: beacon {
-            compatible = "zmk,behavior-beacon";
-            label = "KEY42_MACRO";
-            sequence = <(KC_LCTRL, KC_LGUI, KC_SPC)>;
-        };
-        backspace_del: backspace_del {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BACKSPACE_DEL";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp DEL>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-    };
-};
+/// {
+//    behaviors {
+//        // Change the shift character for the comma key.
+//        comma_dash: mod_morph_comma_dash {
+//            compatible = "zmk,behavior-mod-morph";
+//            label = "COMMA_DASH";
+//            bindings = <&kp COMMA>, <&kp MINUS>;  // Define the keybindings for comma and dash
+//            mods = <(MOD_LSFT|MOD_RSFT)>;  // Specify that Shift (left shift) is the modifier
+//        };
+//        // Change the shift character for the period key.
+//        period_exclamation: mod_morph_period_exclamation {
+//            compatible = "zmk,behavior-mod-morph";
+//            label = "PERIOD_EXCLAMATION";
+//            bindings = <&kp DOT>, <&kp EXCLAIM>;  // Define the keybindings for period and exclamation mark
+//            mods = <(MOD_LSFT|MOD_RSFT)>;  // Specify that Shift (left shift) is the modifier
+//        };
+//        // Send a combo that equates to emoji menu on a key press.
+//        key42_macro: beacon {
+//            compatible = "zmk,behavior-beacon";
+//            label = "KEY42_MACRO";
+//            sequence = <(KC_LCTRL, KC_LGUI, KC_SPC)>;
+//        };
+//        backspace_del: backspace_del {
+//            compatible = "zmk,behavior-mod-morph";
+//            label = "BACKSPACE_DEL";
+//            #binding-cells = <0>;
+//            bindings = <&kp BACKSPACE>, <&kp DEL>;
+//            mods = <(MOD_LSFT|MOD_RSFT)>;
+//        };
+//    };
+//};
 
 / {
     combos {
