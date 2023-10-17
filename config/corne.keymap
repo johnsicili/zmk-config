@@ -38,13 +38,13 @@
 //            #binding-cells = <0>;
 //            sequence = <(KC_LCTRL, KC_LGUI, KC_SPC)>;
 //        };
-        backspace_del: backspace_del {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BACKSPACE_DEL";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp DEL>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+//        backspace_del: backspace_del {
+//            compatible = "zmk,behavior-mod-morph";
+//            label = "BACKSPACE_DEL";
+//            #binding-cells = <0>;
+//            bindings = <&kp BACKSPACE>, <&kp DEL>;
+//            mods = <(MOD_LSFT|MOD_RSFT)>;
+//        };
     };
 };
 
