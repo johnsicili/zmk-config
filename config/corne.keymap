@@ -32,12 +32,12 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         // Send a combo that equates to emoji menu on a key press.
-        key42_macro: beacon {
-            compatible = "zmk,behavior-beacon";
-            label = "KEY42_MACRO";
-            #binding-cells = <0>;
-            sequence = <(KC_LCTRL, KC_LGUI, KC_SPC)>;
-        };
+//        key42_macro: beacon {
+//            compatible = "zmk,behavior-beacon";
+//            label = "KEY42_MACRO";
+//            #binding-cells = <0>;
+//            sequence = <(KC_LCTRL, KC_LGUI, KC_SPC)>;
+//        };
         backspace_del: backspace_del {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DEL";
