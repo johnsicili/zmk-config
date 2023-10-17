@@ -19,15 +19,15 @@
         comma_dash: mod_morph_comma_dash {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_DASH";
-            bindings = <&kp COMMA>, <&kp MINUS>;  // Define the keybindings for comma and dash
-            mods = <(MOD_LSFT|MOD_RSFT)>;  // Specify that Shift (left shift) is the modifier
+            bindings = <&kp COMMA>, <&kp MINUS>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         // Change the shift character for the period key.
         period_exclamation: mod_morph_period_exclamation {
             compatible = "zmk,behavior-mod-morph";
             label = "PERIOD_EXCLAMATION";
-            bindings = <&kp DOT>, <&kp EXCLAIM>;  // Define the keybindings for period and exclamation mark
-            mods = <(MOD_LSFT|MOD_RSFT)>;  // Specify that Shift (left shift) is the modifier
+            bindings = <&kp DOT>, <&kp EXCLAIM>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         // Send a combo that equates to emoji menu on a key press.
 //        key42_macro: beacon {
