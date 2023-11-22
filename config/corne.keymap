@@ -14,17 +14,6 @@
 #define RAISE 2
 
 / {
-    combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <20 21>;
-            bindings = <&kp ESC>;
-        };
-    };
-};
-
-/ {
     behaviors {
         bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
@@ -37,7 +26,7 @@
 };
 
 &lt {
-    tapping-term-ms = <150>;
+    tapping-term-ms = <100>;
 };
 
 &mt {
