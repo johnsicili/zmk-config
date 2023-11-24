@@ -22,13 +22,13 @@
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        td_left_shift_caps_lock: tap_dance_left_shift_caps_lock {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_LEFT_SHIFT_CAPS_LOCK";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LSHIFT>, <&kp CAPS_LOCK>;
-        };
+//        td_left_shift_caps_lock: tap_dance_left_shift_caps_lock {
+//            compatible = "zmk,behavior-tap-dance";
+//            label = "TD_LEFT_SHIFT_CAPS_LOCK";
+//            #binding-cells = <0>;
+//            tapping-term-ms = <200>;
+//            bindings = <&kp LSHIFT>, <&kp CAPS_LOCK>;
+//        };
     };
 };
 
@@ -49,7 +49,7 @@
       bindings = <
         &kp TAB  &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &bspc_del
         &kp LCTRL &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI &kp SQT
-        &td_left_shift_caps_lock &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
+        &kp LSHIFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
         &kp LALT &kp LCMD &lt RAISE ENTER &lt RAISE SPACE &mo LOWER &kp ESC
       >;
     };
