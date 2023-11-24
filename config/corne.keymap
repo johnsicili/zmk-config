@@ -34,7 +34,7 @@
 
 &lt {
     tapping-term-ms = <100>;
-    retro-tap;
+    retro-tap = true;
 };
 
 &mt {
