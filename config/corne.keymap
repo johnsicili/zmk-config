@@ -27,7 +27,7 @@
             label = "TD_SHIFT_CAPS";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LSHIFT>, <&kp CAPS>;
+            bindings = <&kp RSHIFT>, <&kp CAPS>;
         };
     };
 };
@@ -49,7 +49,7 @@
       bindings = <
         &kp TAB  &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &bspc_del
         &kp LCTRL &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI &kp SQT
-        &td_shift_caps &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
+        &kp LSHIFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp FSLH &td_shift_caps
         &kp LALT &kp LCMD &lt RAISE ENTER &kp SPACE &bspc_del &lt LOWER ESC
       >;
     };
